@@ -15,11 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header class="main-header">
-      <div class="container display-flex">
+      <div class="container header-container">
         <nav class="nav-wrap">
           <a class="logo link logo-header" href="./index.html">
             Web<span class="logo accent-navy-blue">Studio</span>
@@ -52,6 +52,17 @@
             </li>
           </ul>
         </address>
+
+        <button
+          type="button"
+          class="header-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -60,11 +71,16 @@
           <h1 class="hero-screen-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="general-btn" type="button" data-modal-open>
+          <button
+            class="general-btn hero-screen-btn"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
       </section>
+
       <section class="section-advantages">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
@@ -75,8 +91,8 @@
                   <use href="./images/icons.svg#icon-antenna" />
                 </svg>
               </div>
-              <h3 class="sub-title">Strategy</h3>
-              <p class="general-text">
+              <h3 class="advantages-title">Strategy</h3>
+              <p class="advantages-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -87,8 +103,8 @@
                   <use href="./images/icons.svg#icon-clock" />
                 </svg>
               </div>
-              <h3 class="sub-title">Punctuality</h3>
-              <p class="general-text">
+              <h3 class="advantages-title">Punctuality</h3>
+              <p class="advantages-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -99,8 +115,8 @@
                   <use href="./images/icons.svg#icon-diagram" />
                 </svg>
               </div>
-              <h3 class="sub-title">Diligence</h3>
-              <p class="general-text">
+              <h3 class="advantages-title">Diligence</h3>
+              <p class="advantages-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -111,8 +127,8 @@
                   <use href="./images/icons.svg#icon-astronaut" />
                 </svg>
               </div>
-              <h3 class="sub-title">Technologies</h3>
-              <p class="general-text">
+              <h3 class="advantages-title">Technologies</h3>
+              <p class="advantages-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -120,13 +136,15 @@
           </ul>
         </div>
       </section>
+
       <section class="what-doing-section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list what-doing-img-container">
             <li class="what-doing-item">
               <img
-                src="./images/main-page/Rectangle_71-2.jpg"
+                srcset="./images/main-page/what-are-we-doing-1@2x.jpg 2x"
+                src="./images/main-page/what-are-we-doing-1.jpg"
                 alt="computer"
                 width="360"
                 height="300"
@@ -134,7 +152,8 @@
             </li>
             <li class="what-doing-item">
               <img
-                src="./images/main-page/Rectangle_71-1.jpg"
+                srcset="./images/main-page/what-are-we-doing-2@2x.jpg 2x"
+                src="./images/main-page/what-are-we-doing-2.jpg"
                 alt="mobile phones"
                 width="360"
                 height="300"
@@ -142,7 +161,8 @@
             </li>
             <li class="what-doing-item">
               <img
-                src="./images/main-page/Rectangle_71.jpg"
+                srcset="./images/main-page/what-are-we-doing-3@2x.jpg 2x"
+                src="./images/main-page/what-are-we-doing-3.jpg"
                 alt="mobile phone"
                 width="360"
                 height="300"
@@ -151,6 +171,7 @@
           </ul>
         </div>
       </section>
+
       <section class="team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -158,6 +179,7 @@
             <li class="team-item">
               <img
                 src="./images/main-page/img-3.jpg"
+                srcset="./images/main-page/img-3@2x.jpg 2x"
                 alt="personal photo"
                 width="264"
                 height="260"
@@ -220,6 +242,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/main-page/img-2@2x.jpg 2x"
                 src="./images/main-page/img-2.jpg"
                 alt="personal photo"
                 width="264"
@@ -282,6 +305,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/main-page/img-1@2x.jpg 2x"
                 src="./images/main-page/img-1.jpg"
                 alt="personal photo"
                 width="264"
@@ -344,6 +368,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/main-page/img@2x.jpg 2x"
                 src="./images/main-page/img.jpg"
                 alt="personal photo"
                 width="264"
@@ -407,6 +432,7 @@
           </ul>
         </div>
       </section>
+
       <section class="customers-section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -502,11 +528,11 @@
 
         <div class="footer-social">
           <p class="footer-block-title">Social media</p>
-          <ul class="list footer-social-list">
-            <li class="footer-social-list-item">
-              <a class="footer-social-link" href="">
+          <ul class="list social-list">
+            <li class="social-list-item">
+              <a class="social-link" href="">
                 <svg
-                  class="footer-social-icon"
+                  class="social-icon"
                   width="24"
                   height="24"
                   aria-label="instagram social icon"
@@ -515,10 +541,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-link" href="">
+            <li class="social-list-item">
+              <a class="social-link" href="">
                 <svg
-                  class="footer-social-icon"
+                  class="social-icon"
                   width="24"
                   height="24"
                   aria-label="instagram social icon"
@@ -527,10 +553,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-link" href="">
+            <li class="social-list-item">
+              <a class="social-link" href="">
                 <svg
-                  class="footer-social-icon"
+                  class="social-icon"
                   width="24"
                   height="24"
                   aria-label="instagram social icon"
@@ -539,10 +565,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-link" href="">
+            <li class="social-list-item">
+              <a class="social-link" href="">
                 <svg
-                  class="footer-social-icon"
+                  class="social-icon"
                   width="24"
                   height="24"
                   aria-label="instagram social icon"
@@ -579,7 +605,7 @@
       </div>
     </footer>
 
-    <div class="modal-bg is-hidden" data-modal>
+    <div class="is-hidden modal-bg" data-modal>
       <div class="modal-wrap">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -664,11 +690,112 @@
             </label>
           </div>
 
-          <button class="general-btn" type="submit">Send</button>
+          <button class="general-btn modal-send-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
 
+    <div class="mobile-menu-wrap js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="modal-close-btn modal-close-btn--mobile-menu js-close-menu"
+      >
+        <svg class="modal-close-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="list mobile-menu-nav">
+        <li>
+          <a
+            class="link mobile-menu-nav-link mobile-menu-nav-link--active"
+            href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li>
+          <a class="link mobile-menu-nav-link" href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="link mobile-menu-nav-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="mobile-menu-address">
+        <ul class="list mobile-menu-address-list">
+          <li>
+            <a class="link mobile-menu-address-tel" href="tel:+110001111111">
+              +11 (000) 111-11-11
+            </a>
+          </li>
+          <li>
+            <a
+              class="link mobile-menu-address-email"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+      </address>
+      <ul class="list social-list modal-menu-social-list">
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg
+              class="social-icon"
+              width="24"
+              height="24"
+              aria-label="instagram social icon"
+            >
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg
+              class="social-icon"
+              width="24"
+              height="24"
+              aria-label="instagram social icon"
+            >
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg
+              class="social-icon"
+              width="24"
+              height="24"
+              aria-label="instagram social icon"
+            >
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg
+              class="social-icon"
+              width="24"
+              height="24"
+              aria-label="instagram social icon"
+            >
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

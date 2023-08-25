@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px) {
+  .filter-btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    padding: 48px 0;
+  }
+
+  .portfolio-section {
+    padding-bottom: 48px;
+  }
+
+  .portfolio-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+
+  .portfolio-item {
+    width: 396px;
+  }
+}

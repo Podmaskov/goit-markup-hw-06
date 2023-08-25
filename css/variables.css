@@ -1,0 +1,14 @@
+:root {
+  --color-green: #31d0aa;
+  --color-cloud: #f4f4fd;
+  --color-cornflower: #e7e9fc;
+  --color-iris: #4d5ae5;
+  --color-navy-blue: #2e2f42;
+  --color-ocean: #404bbf;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-white: #fff;
+  --color-light-black: rgba(46, 47, 66, 0.4);
+  --color-dairy: #fcfcfc;
+  --transition-general-params: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
