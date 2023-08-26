@@ -75,11 +75,15 @@
   /* Hero screen End */
 
   /* Section 1 main page */
+
+  .section-advantages {
+    padding: 96px 0;
+  }
+
   .advantages-container {
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
-    padding: 96px 0;
   }
 
   .advantages-item {
@@ -400,4 +404,18 @@
     column-gap: 56px;
   }
   /* Menu Modal End*/
+}
+
+@media screen and (max-width: 428px) {
+  .modal-wrap {
+    width: min(100%, 392px);
+  }
+
+  .mobile-menu-address-tel {
+    font-size: max(calc(20px + 16 * (100vw - 320px) / 108), 20px);
+  }
+
+  .modal-menu-social-list {
+    column-gap: max(calc(26px + 30 * (100vw - 320px) / 108), 0px);
+  }
 }

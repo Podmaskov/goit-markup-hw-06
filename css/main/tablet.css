@@ -107,9 +107,9 @@
     background-color: var(--color-navy-blue);
   }
 
-  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px),
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1157px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1157px) {
     .hero-screen {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -137,8 +137,12 @@
   /* Hero screen End */
 
   /* Section 1 main page */
-  .advantages-container {
+
+  .section-advantages {
     padding: 96px 0;
+  }
+
+  .advantages-container {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -298,6 +302,7 @@
   }
 
   .footer-container {
+    max-width: 584px;
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -367,14 +372,6 @@
   }
 
   /* Footer End */
-
-  /* Modal */
-
-  .modal-wrap {
-    width: 392px;
-  }
-
-  /* Modal End */
 
   /* Menu Modal */
   .mobile-menu-wrap {
